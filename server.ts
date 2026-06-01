@@ -1,19 +1,16 @@
 import express from "express";
 import path from "path";
 import multer from "multer";
-import { createRequire } from "module";
 import mammoth from "mammoth";
+import pdf from "pdf-parse";
 import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
-
-const require = createRequire(import.meta.url);
-const pdf = require("pdf-parse");
 
 dotenv.config();
 
 // Initialize Express
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Log all incoming API requests
 app.use("/api", (req, res, next) => {
