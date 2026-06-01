@@ -445,7 +445,7 @@ ${truncatedText}
     try {
       // Make the GenAI API call with automatic retry & backoff
       const response = await generateContentWithRetry(ai, {
-        model: "gemini-2.5-flash",
+        model: "gemini-2.5-flash-lite",
         contents: prompt,
         config: {
           systemInstruction: systemPrompt,
