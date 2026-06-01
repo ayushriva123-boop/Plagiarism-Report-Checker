@@ -1,0 +1,6 @@
+{
+  "name": "Plagiarism Report Checker",
+  "description": "An elegant AI-powered document analysis tool to detect plagiarism, calculate originality, locate sources, and generate professional PDF reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
